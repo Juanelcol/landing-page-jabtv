@@ -86,7 +86,7 @@ ul {
     font-weight: var(--bold-font);
 }
 
-section {
+section#hero  {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -207,21 +207,17 @@ iframe {
     padding: 10px;
 }
 
-.people {
-    margin-top: 2rem;
-    padding: 1.5rem 0;
+.img-card-2 {
+    height: 50vh;
 }
 
 .stakeholders {
-    margin: 4.5rem auto;
-    max-width: 1100px;
-}
-
-.persons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
     gap: 1rem;
+    margin-top: 5rem;
+    padding-top: 7rem;
 }
 
 .name {
@@ -230,13 +226,17 @@ iframe {
 }
 
 .sub {
-    margin-top: 2rem;
+    margin-top: 7rem;
     display: block;
 
 }
 
 .sub h3 {
     text-align: center;
+}
+
+.footer {
+    margin-bottom: 0;
 }
 
 form {
@@ -270,6 +270,14 @@ form {
     background-color: #095cf7;
 }
 
-.social {
+#social-h3 {
     display: block;
+}
+
+.footer {
+    border-top: 1px solid rgba(155, 149, 149, 0.856);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.7rem;
 }
