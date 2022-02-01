@@ -1,5 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
+@media  screen and (max-width:768px) {
+    .hamburguer {
+        display: block;
+        cursor: pointer;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    #hero {
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    .intro-text h1 {
+        font-size: 2.3rem;
+    }
+
+    .btn {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    iframe {
+        max-width: 26rem;
+    }
+
+    .stand-1 {
+        left: 170px;
+    }
+
+    .stand-2 {
+        left: 225px;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .stars {
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+
+    .stars-gallery .img-card {
+        width: 30%;
+        height: 30vh;
+        padding: 5px;
+    }
+
+    .stakeholders {
+        display: flex;
+        width: 30%;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        margin: auto;
+    }    
+
+}
+
 :root {
     --normal-font: 400;
     --bold-font: 600;
@@ -100,7 +161,7 @@ a:hover {
 
 nav {
     background: #fff;
-    background-color: var(--bg);
+    /*background-color: var(--bg);*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,11 +170,7 @@ nav {
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 1;
-}
-
-.hamburguer {
-    display: none;
+    z-index: 999;
 }
 
 .logo {
@@ -261,11 +318,14 @@ iframe {
     height: 50vh;
 }
 
+section.people {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .stakeholders {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
     margin-top: 5rem;
     padding-top: 7rem;
 }
